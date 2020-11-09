@@ -7,15 +7,10 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      // This stores which button was clicked. It's a state variable
-      // because the button that is clicked has the ability to change.
       buttonClicked: "",
-      // This stores the list of assignments. It's a state variable
-      // because the list changes every time a new assignment is added.
-      assignments: [] /*Below this line, add the students state variable*/,
-      // This shoud store the grade for each student. However, we have no way to store students, so let's fit that!
-      grades: {},
+      assignments: [],
       students = [],
+      grades: {},
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
